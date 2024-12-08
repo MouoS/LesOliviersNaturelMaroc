@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du Stock d'Huile d'Olive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion du Stock d'Huile d'Olive</h1>
+    </header>
+
+    <div class="container">
+        <!-- Tableau de bord du stock -->
+        <section>
+            <h2>Tableau de bord</h2>
+            <p>Stock actuel : <span id="stock-actuel">100L</span> (20 bidons de 5L)</p>
+        </section>
+
+        <!-- Formulaire de saisie -->
+        <section>
+            <h2>Ajouter une commande</h2>
+            <form id="form-commande">
+                <label for="nom">Nom du produit :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="description">Description :</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="quantite">Quantité (en bidons de 5L) :</label>
+                <select id="quantite" name="quantite">
+                    <option value="5">5L</option>
+                    <option value="10">10L</option>
+                    <option value="15">15L</option>
+                    <option value="20">20L</option>
+                    <!-- Vous pouvez ajouter plus d'options ici -->
+                </select>
+
+                <button type="submit">Ajouter au stock</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Gestion du stock d'huile d'olive</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
